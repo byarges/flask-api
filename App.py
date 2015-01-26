@@ -17,6 +17,17 @@ def names():
     data = {"names": ["John", "Jacob", "Julie", "Jennifer"]}
     return jsonify(data)
 
+data = ["Blake", "Ben", "stuff", "things"]
+
+    @app.route('/variable/<int:var>/')
+def int_var(var):
+    if var < 0:
+        return jsonify({"error":True})
+    elif var >= len(data):
+        return jsonify({"error":True})
+    return jsonify(data[var])
+
+
 
 if __name__ == '__main__':
     app.run()
