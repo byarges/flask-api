@@ -8,7 +8,7 @@ def index():
     return 'Flask is running!'
 
 @app.route('/ben/')
-def index():
+def ben():
     return 'Hello Ben!'
 
 
