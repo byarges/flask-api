@@ -5,7 +5,7 @@ app = Flask(__name__) #creating application
 #example of routing in flask
 @app.route('/')
 def index():
-    return app.send_static_file('AnotherTest.html')
+    return ('Flask is running')
 
 @app.route('/ben/')
 def ben():
