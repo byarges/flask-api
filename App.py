@@ -25,7 +25,7 @@ def int_var(var):
         return jsonify({"error":True})
     elif var >= len(data):
         return jsonify({"error":True})
-    return jsonify(data[var])
+    return jsonify({'key':var,'value':data[var]})
 
 
 
