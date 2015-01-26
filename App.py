@@ -19,7 +19,7 @@ def names():
 
 data = ["Blake", "Ben", "stuff", "things"]
 
-    @app.route('/variable/<int:var>/')
+@app.route('/variable/<int:var>/')
 def int_var(var):
     if var < 0:
         return jsonify({"error":True})
