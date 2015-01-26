@@ -5,7 +5,7 @@ app = Flask(__name__) #creating application
 #example of routing in flask
 @app.route('/')
 def index():
-    return 'Flask is running!'
+    return render_template('AnotherTest.html')
 
 @app.route('/ben/')
 def ben():
