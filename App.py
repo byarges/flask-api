@@ -17,7 +17,7 @@ def names():
     data = {"names": ["John", "Jacob", "Julie", "Jennifer"]}
     return jsonify(data)
 
-data = ["Blake", "Ben", "stuff", "things"]
+data = ["Blake", "Ben", "stuff", "things", "Eric"]
 
 @app.route('/variable/<int:var>/')
 def int_var(var):
